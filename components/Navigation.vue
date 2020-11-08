@@ -79,7 +79,8 @@
               v-for="(navItem, navIndex) in navItems"
               :key="navIndex"
               :to="navItem.route"
-              class="mr-5 hover:text-brand cursor-pointer"
+              class="nav-link mr-5 hover:text-brand cursor-pointer"
+              @click.native="isNavExpanded = false"
               >{{ navItem.name }}</nuxt-link
             >
           </div>
@@ -87,7 +88,7 @@
       </div>
 
       <button
-        class="items-center hidden md:block bg-brand hover:bg-lightseagreen-200 text-lightseagreen-50 hover:text-brand border-0 py-1 px-3 focus:outline-none rounded text-base"
+        class="items-center hidden opacity-75 hover:opacity-100 md:block bg-brand text-lightseagreen-50 border-0 py-1 px-3 focus:outline-none rounded text-base"
       >
         Let us help you!
       </button>

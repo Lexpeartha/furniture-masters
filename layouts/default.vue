@@ -3,6 +3,7 @@
     <Alert v-show="alert" @dismissed="dismissAlert" />
     <Navigation />
     <Nuxt />
+    <Footer />
   </div>
 </template>
 
