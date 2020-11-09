@@ -1,7 +1,7 @@
 <template>
   <section class="text-gray-700 body-font">
     <div
-      class="container mx-auto flex px-5 pt-24 pb-12 md:flex-row flex-col items-center"
+      class="container mx-auto flex px-5 pt-24 pb-6 md:flex-row flex-col items-center"
     >
       <div
         class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
@@ -29,7 +29,7 @@
             />
           </div>
           <button
-            class="inline-flex text-lightseagreen-50 opacity-75 hover:opacity-100 bg-brand border-0 py-2 px-6 focus:outline-none rounded text-lg"
+            class="inline-flex transition-opacity duration-300 text-lightseagreen-50 opacity-75 hover:opacity-100 bg-brand border-0 py-2 px-6 focus:outline-none rounded text-lg"
           >
             Submit
           </button>

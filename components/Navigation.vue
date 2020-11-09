@@ -25,7 +25,7 @@
           v-for="(navItem, navIndex) in navItems"
           :key="navIndex"
           :to="navItem.route"
-          class="mr-5 hover:text-brand hidden md:block cursor-pointer"
+          class="mr-5 transition duration-300 hover:text-brand hidden md:block cursor-pointer"
           >{{ navItem.name }}</nuxt-link
         >
       </nav>
@@ -72,7 +72,7 @@
           <div
             v-if="isNavExpanded"
             id="mobileNav"
-            class="absolute py-3 px-2 w-32 md:hidden bg-lightseagreen-50 text-chocolate-600 right-0 flex flex-col"
+            class="absolute py-3 px-2 w-32 md:hidden transition duration-300 bg-lightseagreen-50 text-chocolate-600 right-0 flex flex-col"
             @mouseleave="isNavExpanded = false"
           >
             <nuxt-link
@@ -88,7 +88,7 @@
       </div>
 
       <button
-        class="items-center hidden opacity-75 hover:opacity-100 md:block bg-brand text-lightseagreen-50 border-0 py-1 px-3 focus:outline-none rounded text-base"
+        class="items-center hidden opacity-75 hover:opacity-100 md:block transition-opacity duration-300 bg-brand text-lightseagreen-50 border-0 py-1 px-3 focus:outline-none rounded text-base"
       >
         Let us help you!
       </button>
