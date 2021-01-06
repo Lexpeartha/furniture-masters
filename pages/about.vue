@@ -1,5 +1,7 @@
 <template>
-  <div></div>
+  <div>
+    <MeetTheTeam></MeetTheTeam>
+  </div>
 </template>
 
 <script>

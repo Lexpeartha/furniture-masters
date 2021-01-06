@@ -1,5 +1,5 @@
 <template>
-  <section class="text-gray-700 body-font">
+  <section class="body-font">
     <div
       class="container mx-auto flex px-5 pt-24 pb-6 md:flex-row flex-col items-center"
     >

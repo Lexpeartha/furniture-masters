@@ -72,14 +72,14 @@
           <div
             v-if="isNavExpanded"
             id="mobileNav"
-            class="absolute py-3 px-2 w-32 md:hidden transition duration-300 bg-lightseagreen-50 text-chocolate-600 right-0 flex flex-col"
+            class="absolute origin-center right-0 py-3 rounded-md px-2 w-56 md:hidden transition duration-300 bg-lightseagreen-50 text-chocolate-600 flex flex-col"
             @mouseleave="isNavExpanded = false"
           >
             <nuxt-link
               v-for="(navItem, navIndex) in navItems"
               :key="navIndex"
               :to="navItem.route"
-              class="nav-link mr-5 hover:text-brand cursor-pointer"
+              class="nav-link mr-5 my-1 hover:text-brand cursor-pointer"
               @click.native="isNavExpanded = false"
               >{{ navItem.name }}</nuxt-link
             >

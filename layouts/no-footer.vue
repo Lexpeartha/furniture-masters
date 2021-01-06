@@ -4,13 +4,12 @@
 
     <Navigation />
     <Nuxt />
-    <Footer />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'DefaultLayout',
+  name: 'NoFooter',
   data() {
     return {
       alert: true,

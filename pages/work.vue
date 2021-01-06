@@ -1,10 +1,15 @@
 <template>
-  <div></div>
+  <div>
+    <ContactForm></ContactForm>
+  </div>
 </template>
 
 <script>
 export default {
   name: 'Work',
+  layout(context) {
+    return 'NoFooter'
+  },
 }
 </script>
 
