@@ -53,6 +53,7 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+    publicPath: '/furniture-masters/_nuxt/',
     extend(config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
