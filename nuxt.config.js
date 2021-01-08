@@ -8,7 +8,7 @@ export default {
   // Fixing github pages hosting
   router: {
     base: '/furniture-masters/'
-  }
+  },
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
