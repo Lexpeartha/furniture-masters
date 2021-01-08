@@ -5,6 +5,11 @@ export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
 
+  // Fixing github pages hosting
+  router: {
+    base: '/furniture-masters/'
+  }
+
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: 'Furniture Masters',
