@@ -35,7 +35,6 @@
           id="hamburger"
           class="md:hidden block bg-transparent focus:outline-none"
           @click="hamburgerOnClick"
-          @mouseenter="isNavExpanded = true"
         >
           <transition mode="out-in" name="switch">
             <svg
@@ -69,11 +68,11 @@
         </button>
 
         <transition name="slide" tag="div">
+          <!-- Navigation -->
           <div
             v-if="isNavExpanded"
             id="mobileNav"
             class="absolute origin-center right-0 py-3 rounded-md px-2 w-56 md:hidden transition duration-300 bg-lightseagreen-50 text-chocolate-600 flex flex-col"
-            @mouseleave="isNavExpanded = false"
           >
             <nuxt-link
               v-for="(navItem, navIndex) in navItems"
